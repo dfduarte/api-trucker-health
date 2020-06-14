@@ -140,4 +140,6 @@ As regras de manipulação do endpoint sao as mesmas do endpoint `/trucker`
 
 ## Outras partes desse projeto:
 
-* Frontend: https://github.com/GabrieleSuzart/web-trucker-health
+* Frontend: [https://github.com/GabrieleSuzart/web-trucker-health](https://github.com/GabrieleSuzart/web-trucker-health)
+* Mobile: [https://github.com/maclacerda/trucker-health](https://github.com/maclacerda/trucker-health)
+* API: [https://github.com/dfduarte/api-trucker-health](https://github.com/dfduarte/api-trucker-health)
