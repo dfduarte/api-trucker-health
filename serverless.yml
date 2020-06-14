@@ -4,7 +4,7 @@ provider:
   name: aws
   stage: v1
   runtime: nodejs10.x
-  profile: marilia
+  profile: default
   iamRoleStatements:
     - Effect: Allow
       Action:
