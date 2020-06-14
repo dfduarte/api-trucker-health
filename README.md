@@ -23,12 +23,13 @@ Principais requisitos são:
 
 1- Entre nos 3 diretórios em `src/repositories` e rode o `npm install` em cada um deles.
 2- Crie um perfil com as permissoes acima no console IAM da AWS (ou scriptado, dependendo do que você precisar)
-3- Na raiz, rode o seguinte comando:
+3- Crie 2 tabelas no DynamoDB com o seguinte nome: `trucker_health_mocks` e `trucker_emergency_button_mock` (você pode alterar o nome, porem deverá atualizar as tabelas no codigo e no serverless.yml)
+4- Na raiz, rode o seguinte comando:
 ```
 AWS_PROFILE=<seu profile criado> AWS_REGION=<sua regiao> AWS_SDK_LOAD_CONFIG=true slss deploy
 ```
 
-4- aguarde o deploy finalizar. Ele precisa retornar os endpoints. como por exemplo:
+5- aguarde o deploy finalizar. Ele precisa retornar os endpoints. como por exemplo:
 
 ```
 PPM-SPO-6421:hacka-ccr diego.duarte$ AWS_PROFILE=hackaton AWS_REGION=us-east-1 AWS_SDK_LOAD_CONFIG=true slss deploy
@@ -139,6 +140,7 @@ As regras de manipulação do endpoint sao as mesmas do endpoint `/trucker`
 ----------
 
 ## Outras partes desse projeto:
+
 
 * Frontend: [https://github.com/GabrieleSuzart/web-trucker-health](https://github.com/GabrieleSuzart/web-trucker-health)
 * Mobile: [https://github.com/maclacerda/trucker-health](https://github.com/maclacerda/trucker-health)
